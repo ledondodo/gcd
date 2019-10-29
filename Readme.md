@@ -1,5 +1,5 @@
 # A General-Purpose Algorithm for Constrained Sequential Inference
-This repository contains the code for the CoNLL 2019 paper [A General-Purpose Algorithm for Constrained Sequential Inference](https://cogcomp.seas.upenn.edu/papers/DeutschUpRo19.pdf).
+This repository contains the archived code for the CoNLL 2019 paper [A General-Purpose Algorithm for Constrained Sequential Inference](https://cogcomp.seas.upenn.edu/papers/DeutschUpRo19.pdf).
 
 Many current approaches for inference make decisions in a left-to-right manner.
 However, there is no general framework to specify constraints in these approaches.  
