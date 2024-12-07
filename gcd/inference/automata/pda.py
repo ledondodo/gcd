@@ -81,7 +81,7 @@ class PDA(Automaton):
 
                 self.valid_state_stacks[from_state] = state_stacks
 
-    @overrides
+    # @overrides
     def accepts(self, input_sequence: Union[Automaton, List[int]]) -> bool:
         if isinstance(input_sequence, list):
             automaton = self.convert_to_automaton(input_sequence)
@@ -90,7 +90,7 @@ class PDA(Automaton):
         intersection = pynini.pdt_compose(self.fst, automaton, self.parens)
         return pynini.pdt_expand(intersection, self.parens).num_states() != 0
 
-    @overrides
+    # @overrides
     def step(self, input_state: int, input_stack: int, key: int) -> Tuple[int, int]:
         assert self._compiled
         if not self._is_dag:

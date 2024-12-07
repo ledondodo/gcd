@@ -9,7 +9,7 @@ class FSA(Automaton):
     def __init__(self):
         super().__init__()
 
-    @overrides
+    # @overrides
     def accepts(self, input_sequence: Union[Automaton, List[int]]) -> bool:
         if isinstance(input_sequence, list):
             automaton = self.convert_to_automaton(input_sequence)
